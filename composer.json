@@ -1,0 +1,32 @@
+{
+    "name": "la-souris/document-signer-docusign",
+    "description": "DocuSign eSignature implementation of the document signer SDK.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Laurens Laman",
+            "email": "l.laman@lasourisscooters.nl"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "la-souris/document-signer-sdk": "^1.0",
+        "guzzlehttp/guzzle": "^7.8",
+        "firebase/php-jwt": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0 || ^13.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaSouris\\DocumentSigner\\DocuSign\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaSouris\\DocumentSigner\\DocuSign\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable"
+}
